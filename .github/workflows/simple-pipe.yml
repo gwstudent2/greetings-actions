@@ -16,6 +16,7 @@ on:
     inputs:
       myValues:
         description: 'Input Values'
+        
 
 permissions:
   contents: read
