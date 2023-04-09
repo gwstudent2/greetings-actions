@@ -81,7 +81,5 @@ jobs:
     if: always() && failure() 
     uses: ./.github/workflows/create-failure-issue.yml 
     with:
-      title: 'foo'
-      body: 'bar bar'
-     # title: "Automated workflow failure issue for commit ${{ github.sha }}"
-     #  body: "This issue was automatically created by the GitHub Action workflow ** ${{ github.workflow }} **"
+      title: "Automated workflow failure issue for commit ${{ github.sha }}"
+      body: "This issue was automatically created by the GitHub Action workflow ** ${{ github.workflow }} **"
