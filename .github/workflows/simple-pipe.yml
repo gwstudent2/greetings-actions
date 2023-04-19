@@ -19,7 +19,7 @@ on:
         description: 'Input Values'
         
 concurrency:
-      group: ${{ github.head_ref }}
+      group: ${{ github.head_ref || github.ref }}
       cancel-in-progress: true
 
 permissions:
