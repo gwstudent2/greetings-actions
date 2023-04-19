@@ -16,4 +16,4 @@ jobs:
   report-result:
     runs-on: ubuntu-latest
     steps:
-      run: echo "reporting"
+      - run: echo "reporting"
