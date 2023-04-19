@@ -8,9 +8,7 @@ on:
   workflow_run:
     workflows: ["Pipeline"]
     types: [requested]
-    branches:
-      - 'rel/**'
-      - '!rel/**-preprod'
+    branches: main
         
 
 jobs:
