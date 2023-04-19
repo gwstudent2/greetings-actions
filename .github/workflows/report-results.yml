@@ -7,7 +7,7 @@ name: Report Results
 on:
   workflow_run:
     workflows: ["Pipeline"]
-    types: [requested]
+    types: [completed]
     branches: main
         
 
