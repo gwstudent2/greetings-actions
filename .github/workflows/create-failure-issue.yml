@@ -1,6 +1,6 @@
 # This is a reusable workflow for creating an issue
 
-name: create-failure-issue
+name: zz-create-failure-issue
 
 # Controls when the workflow will run
 
