@@ -17,6 +17,10 @@ on:
     inputs:
       myValues:
         description: 'Input Values'
+        
+concurrency:
+      group: ${{ github.head_ref }}
+      cancel-in-progress: true
 
 permissions:
   contents: read
@@ -28,9 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     
       
-    concurrency:
-      group: ${{ github.head_ref }}
-      cancel-in-progress: true
+   
 
     steps:
     - uses: actions/checkout@v3
